@@ -9,7 +9,7 @@ public class greate_common_factor {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a:");
         a = scanner.nextInt();
-        System.out.println("Enter a:");
+        System.out.println("Enter b:");
         b = scanner.nextInt();
         a = Math.abs(a);
         b = Math.abs(b);
