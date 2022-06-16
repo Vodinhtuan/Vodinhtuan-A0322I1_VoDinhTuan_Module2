@@ -66,8 +66,24 @@ public class Fan {
         }
     }
 
+    public Fan(boolean on) {
+        if (on == true) {
+            speed = getFAST();
+            radius = 10;
+            color = "yellow";
+            System.out.println(speed + " " + radius + " " + color);
+        } else {
+            speed = getMEDIUM();
+            radius = 5;
+            color = "Blue";
+            System.out.println(speed + " " + radius + " " + color);
+        }
+    }
+
     public static void main(String[] args) {
-        Fan fan = new Fan();
-        System.out.println(fan);
+        Fan fan1 = new Fan(true);
+        Fan fan2 = new Fan(false);
+        System.out.println(fan1);
+        System.out.println(fan2);
     }
 }
