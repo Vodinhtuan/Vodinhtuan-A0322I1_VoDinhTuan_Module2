@@ -29,7 +29,7 @@ public class Fan {
         this.speed = speed;
     }
 
-    public boolean getOn() {
+    public boolean isOn() {
         return on;
     }
 
@@ -59,7 +59,7 @@ public class Fan {
 
     @Override
     public String toString() {
-        if (on == true) {
+        if (true) {
             return speed + " " + color + " " + radius + " fan is on.";
         } else {
             return color + " " + radius + " fan is off.";
@@ -87,3 +87,4 @@ public class Fan {
         System.out.println(fan2);
     }
 }
+//Võ Đình Tuấn Võ Đình Tuấn Või Đình Tuấn Võ Đình Tuaná Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn
