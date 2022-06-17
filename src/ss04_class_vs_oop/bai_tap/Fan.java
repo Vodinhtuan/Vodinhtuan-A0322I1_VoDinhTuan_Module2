@@ -83,8 +83,9 @@ public class Fan {
     public static void main(String[] args) {
         Fan fan1 = new Fan(true);
         Fan fan2 = new Fan(false);
-        System.out.println(fan1);
-        System.out.println(fan2);
+        fan1.toString();
+        fan2.toString();
+
     }
 }
 //Võ Đình Tuấn Võ Đình Tuấn Või Đình Tuấn Võ Đình Tuaná Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn
