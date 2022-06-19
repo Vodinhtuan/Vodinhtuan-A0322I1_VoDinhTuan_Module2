@@ -67,7 +67,7 @@ public class Fan {
     }
 
     public Fan(boolean on) {
-        if (on == true) {
+        if (on) {
             speed = getFAST();
             radius = 10;
             color = "yellow";
@@ -88,4 +88,3 @@ public class Fan {
 
     }
 }
-//Võ Đình Tuấn Võ Đình Tuấn Või Đình Tuấn Võ Đình Tuaná Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn Võ Đình Tuấn

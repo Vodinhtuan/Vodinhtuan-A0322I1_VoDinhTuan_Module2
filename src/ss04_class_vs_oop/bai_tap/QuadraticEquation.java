@@ -12,7 +12,7 @@ public class QuadraticEquation {
         return a;
     }
 
-    public void setA() {
+    public void setA(double a) {
         this.a = a;
     }
 
@@ -20,7 +20,7 @@ public class QuadraticEquation {
         return b;
     }
 
-    public void setB() {
+    public void setB(double b) {
         this.b = b;
     }
 
@@ -28,7 +28,7 @@ public class QuadraticEquation {
         return c;
     }
 
-    public void setC() {
+    public void setC(double c) {
         this.c = c;
     }
 

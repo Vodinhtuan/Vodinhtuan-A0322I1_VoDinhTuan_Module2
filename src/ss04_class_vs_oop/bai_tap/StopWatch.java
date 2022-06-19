@@ -5,6 +5,14 @@ import java.time.LocalTime;
 public class StopWatch {
     private LocalTime startTime, endTime;
 
+    public void setStartTime(LocalTime startTime) {
+        this.startTime = startTime;
+    }
+
+    public void setEndTime(LocalTime endTime) {
+        this.endTime = endTime;
+    }
+
     public StopWatch() {
         startTime=LocalTime.now();
         endTime = LocalTime.now();
