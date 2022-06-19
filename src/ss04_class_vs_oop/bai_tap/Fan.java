@@ -5,7 +5,7 @@ public class Fan {
     final int MEDIUM = 2;
     final int FAST = 3;
     private int speed = SLOW;
-    private boolean on = false;
+    private boolean on;
     private double radius = 5;
     private String color = "blue";
 
@@ -59,7 +59,7 @@ public class Fan {
 
     @Override
     public String toString() {
-        if (on) {
+        if ( on) {
             return speed + " " + color + " " + radius + " fan is on.";
         } else {
             return color + " " + radius + " fan is off.";
@@ -67,7 +67,9 @@ public class Fan {
     }
 
     public Fan(boolean on) {
-        if (on) {
+        this.on = on;
+
+        if (on == true) {
             speed = getFAST();
             radius = 10;
             color = "yellow";
@@ -83,8 +85,7 @@ public class Fan {
     public static void main(String[] args) {
         Fan fan1 = new Fan(true);
         Fan fan2 = new Fan(false);
-        fan1.toString();
-        fan2.toString();
-
+        System.out.println(fan1.toString());
+        System.out.println(fan2.toString());
     }
 }
