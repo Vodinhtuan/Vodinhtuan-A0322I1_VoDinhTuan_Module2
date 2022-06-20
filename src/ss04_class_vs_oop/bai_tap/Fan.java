@@ -59,7 +59,7 @@ public class Fan {
 
     @Override
     public String toString() {
-        if ( on) {
+        if (on) {
             return speed + " " + color + " " + radius + " fan is on.";
         } else {
             return color + " " + radius + " fan is off.";
@@ -68,7 +68,6 @@ public class Fan {
 
     public Fan(boolean on) {
         this.on = on;
-
         if (on == true) {
             speed = getFAST();
             radius = 10;
