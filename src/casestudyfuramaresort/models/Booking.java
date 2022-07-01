@@ -65,8 +65,8 @@ public class Booking {
 
     @Override
     public String toString() {
-        return "Booking{" +
-                "idBooking='" + idBooking + '\'' +
+        return "Booking{" + super.toString()+
+                " idBooking='" + idBooking + '\'' +
                 ", startDay='" + startDay + '\'' +
                 ", endDate='" + endDate + '\'' +
                 ", idCustomer='" + idCustomer + '\'' +
