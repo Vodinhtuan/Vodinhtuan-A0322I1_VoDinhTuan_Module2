@@ -12,6 +12,7 @@ public class MyList<E> {
     }
 
     public MyList(int capacity) {
+
         elements = new Object[capacity];
     }
 
