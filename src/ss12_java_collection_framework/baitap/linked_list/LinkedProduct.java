@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class LinkedProduct {
     private LinkedList<Product> linkedList = new LinkedList<>();
     public static void managementProduct(){
-        ProductManager manager = new ProductManager();
+        LinkedProduct manager = new LinkedProduct();
         Scanner scanner = new Scanner(System.in);
         int select = 0;
         do {
