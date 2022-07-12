@@ -3,7 +3,7 @@ package ss13_search_algorithm.baitap;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Bt01_String_Ascending {
+public class Bt03MaxLengthArray {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         LinkedList<Character> max = new LinkedList<>();
