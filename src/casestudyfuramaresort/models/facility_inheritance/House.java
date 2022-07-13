@@ -1,19 +1,15 @@
-package casestudyfuramaresort.models;
+package casestudyfuramaresort.models.facility_inheritance;
 
-public class Villa extends Facility{
-    /* -	Riêng loại Villa sẽ có thêm thông tin:
-    Tiêu chuẩn phòng, Diện tích hồ bơi, Số tầng. */
+public class House extends Facility {
     private String roomStandard;
-    private double swimmingPoolArea;
     private int numberOfFloors;
 
-    public Villa() {
+    public House() {
     }
 
-    public Villa(String serviceName, String rentalType, double area, double cost, int amount, String roomStandard, double swimmingPoolArea, int numberOfFloors) {
+    public House(String serviceName, String rentalType, double area, double cost, int amount, String roomStandard, int numberOfFloors) {
         super(serviceName, rentalType, area, cost, amount);
         this.roomStandard = roomStandard;
-        this.swimmingPoolArea = swimmingPoolArea;
         this.numberOfFloors = numberOfFloors;
     }
 
@@ -23,14 +19,6 @@ public class Villa extends Facility{
 
     public void setRoomStandard(String roomStandard) {
         this.roomStandard = roomStandard;
-    }
-
-    public double getSwimmingPoolArea() {
-        return swimmingPoolArea;
-    }
-
-    public void setSwimmingPoolArea(double swimmingPoolArea) {
-        this.swimmingPoolArea = swimmingPoolArea;
     }
 
     public int getNumberOfFloors() {
@@ -43,9 +31,8 @@ public class Villa extends Facility{
 
     @Override
     public String toString() {
-        return "Villa{" +     super.toString()+
+        return "House{" + super.toString() +
                 " roomStandard='" + roomStandard + '\'' +
-                ", swimmingPoolArea=" + swimmingPoolArea +
                 ", numberOfFloors=" + numberOfFloors +
                 '}';
     }

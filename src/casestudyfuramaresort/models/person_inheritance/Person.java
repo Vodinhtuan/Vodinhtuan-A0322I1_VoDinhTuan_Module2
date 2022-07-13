@@ -1,4 +1,4 @@
-package casestudyfuramaresort.models;
+package casestudyfuramaresort.models.person_inheritance;
 
 public abstract class Person {
     protected String code, name, birthDay;

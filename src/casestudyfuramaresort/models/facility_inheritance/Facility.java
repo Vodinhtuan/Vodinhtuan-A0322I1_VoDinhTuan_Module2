@@ -1,4 +1,4 @@
-package casestudyfuramaresort.models;
+package casestudyfuramaresort.models.facility_inheritance;
 
 public abstract class Facility {    // cơ sở vật chất
     protected String serviceName, rentalType;

@@ -1,4 +1,6 @@
-package casestudyfuramaresort.models;
+package casestudyfuramaresort.models.person_inheritance;
+
+import casestudyfuramaresort.models.person_inheritance.Person;
 
 public class Customer extends Person {
     private String customerType, address;

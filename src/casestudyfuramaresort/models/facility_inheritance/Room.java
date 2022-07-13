@@ -1,6 +1,6 @@
-package casestudyfuramaresort.models;
+package casestudyfuramaresort.models.facility_inheritance;
 
-public class Room extends Facility{
+public class Room extends Facility {
     private String freeService;
 
     public Room() {
