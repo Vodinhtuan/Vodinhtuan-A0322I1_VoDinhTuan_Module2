@@ -1,14 +1,15 @@
 package casestudyfuramaresort.models.person_inheritance;
 
 public class Employee extends Person {
-    private String academicLevel, position, salary;
+    private String academicLevel, position;
+    private int salary;
 
     public Employee() {
     }
 
-    public Employee(String code, String name, String birthDay, boolean sex, int id, int phoneNumber, String email, String education, String position, String salary) {
-        super(code, name, birthDay, sex, id, phoneNumber, email);
-        academicLevel = education;
+    public Employee(int id, String name, String birthDay, String sex, int idCard, int phoneNumber, String email, String academicLevel, String position, int salary) {
+        super(id, name, birthDay, sex, idCard, phoneNumber, email);
+        this.academicLevel = academicLevel;
         this.position = position;
         this.salary = salary;
     }
@@ -29,20 +30,20 @@ public class Employee extends Person {
         this.position = position;
     }
 
-    public String getSalary() {
+    public int getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
     @Override
     public String toString() {
-        return "Employee{" + super.toString() +
-                "Education='" + academicLevel + '\'' +
+        return "Employee " + super.toString() +
+                " academicLevel='" + academicLevel + '\'' +
                 ", position='" + position + '\'' +
-                ", salary='" + salary + '\'' +
+                ", salary=" + salary +
                 '}';
     }
 }

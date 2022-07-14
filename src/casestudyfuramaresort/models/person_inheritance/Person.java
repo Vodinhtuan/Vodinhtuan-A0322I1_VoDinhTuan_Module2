@@ -1,30 +1,30 @@
 package casestudyfuramaresort.models.person_inheritance;
 
 public abstract class Person {
-    protected String code, name, birthDay;
-    protected boolean sex;
-    protected int id, phoneNumber;
+    protected int id;
+    protected String  name, birthDay, sex;
+    protected int idCard, phoneNumber;
     protected String email;
 
     public Person() {
     }
 
-    public Person(String code, String name, String birthDay, boolean sex, int id, int phoneNumber, String email) {
-        this.code = code;
+    public Person(int code, String name, String birthDay, String sex, int id, int phoneNumber, String email) {
+        this.id = code;
         this.name = name;
         this.birthDay = birthDay;
         this.sex = sex;
-        this.id = id;
+        this.idCard = id;
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
 
-    public String getCode() {
-        return code;
+    public int getId() {
+        return id;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -43,20 +43,20 @@ public abstract class Person {
         this.birthDay = birthDay;
     }
 
-    public boolean isSex() {
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(boolean sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 
-    public int getId() {
-        return id;
+    public int getIdCard() {
+        return idCard;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdCard(int idCard) {
+        this.idCard = idCard;
     }
 
     public int getPhoneNumber() {
@@ -78,11 +78,11 @@ public abstract class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "code='" + code + '\'' +
+                "code=" + id +
                 ", name='" + name + '\'' +
                 ", birthDay='" + birthDay + '\'' +
-                ", sex=" + sex +
-                ", id=" + id +
+                ", sex='" + sex + '\'' +
+                ", id=" + idCard +
                 ", phoneNumber=" + phoneNumber +
                 ", email='" + email + '\'' +
                 '}';
