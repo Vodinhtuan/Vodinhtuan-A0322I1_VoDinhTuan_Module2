@@ -25,8 +25,9 @@ public class CustomerRepositoryIplm implements CustomerRepository{
         customersList.add(customer);
     }
 
+
     @Override
-    public void updateCustomer(Customer customer) {
+    public void updateCustomer(int id,Customer customer) {
         customersList.set(customer.getId(),customer);
     }
 
