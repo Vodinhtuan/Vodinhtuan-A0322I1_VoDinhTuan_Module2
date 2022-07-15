@@ -1,9 +1,12 @@
 package casestudyfuramaresort.controllers;
 
+import casestudyfuramaresort.services.EmployeeServiceImpl;
+
 import java.util.Scanner;
 
 public class FuramaController {
     public static void main(String[] args) {
+        EmployeeServiceImpl employeeEmployeeService = new EmployeeServiceImpl();
         Scanner scanner = new Scanner(System.in);
         int choice = -1;
         while (choice !=0){
